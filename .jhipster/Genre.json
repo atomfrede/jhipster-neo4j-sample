@@ -1,0 +1,31 @@
+{
+    "name": "Genre",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "album",
+            "otherEntityRelationshipName": "genre",
+            "relationshipName": "album",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200128201100",
+    "entityTableName": "genre",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

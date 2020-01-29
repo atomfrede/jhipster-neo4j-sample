@@ -1,0 +1,31 @@
+{
+    "name": "Artist",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "album",
+            "otherEntityRelationshipName": "artist",
+            "relationshipName": "album",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200128201000",
+    "entityTableName": "artist",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
